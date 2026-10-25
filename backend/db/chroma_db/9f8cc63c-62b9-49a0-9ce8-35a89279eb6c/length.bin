@@ -1,0 +1,5 @@
+- ‘artist_aspect’: if the query is about an artist, extract the aspect of the artist. This must be one of the
+following: ‘member’, ‘birth place’, ‘birth date’, ‘lifespan’, ‘artist work’, ‘grammy award count’,
+‘grammy award date’.
+- ‘song_name’: name of the song
+- ‘song_aspect’: if the query is about a song, extract the aspect of the song. This must be one of

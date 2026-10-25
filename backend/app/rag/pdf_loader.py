@@ -52,8 +52,9 @@ def extract_metadata(page_content:str)->ResearchMetadata|None:
     return metadata
 
 if __name__=="__main__":
-    # first_page=extract_first_page("C:/Users/vaish/Documents/ResearchAgent/backend/data/paper/NeurIPS-2024-crag-comprehensive-rag-benchmark-Paper-Datasets_and_Benchmarks_Track.pdf")
-    # metadata=extract_metadata(first_page)
-    # print(metadata.authors)
-    doc=load_documents("C:/Users/vaish/Documents/ResearchAgent/backend/data/paper")
-    print(doc[1].page_content)
+    first_page=extract_first_page("C:/Users/vaish/Documents/ResearchAgent/backend/data/paper/NeurIPS-2024-crag-comprehensive-rag-benchmark-Paper-Datasets_and_Benchmarks_Track.pdf")
+    metadata=extract_metadata(first_page)
+    print(f"Title: {metadata.title}\nAuthors: {metadata.authors}\nPublished Year: {metadata.publication_year}")
+    # doc=load_documents("C:/Users/vaish/Documents/ResearchAgent/backend/data/paper")
+    # print(doc[1].page_content)
+
